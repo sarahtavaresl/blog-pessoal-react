@@ -54,6 +54,9 @@ function Cadastro() {
         await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
         alert('Usuário cadastrado com sucesso!')
       }catch(error){
+
+        alert(JSON.stringify(usuario))
+
         alert('Erro ao cadastrar o usuário!')
       }
     }else{
